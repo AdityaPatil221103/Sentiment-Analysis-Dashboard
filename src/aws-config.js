@@ -5,10 +5,10 @@ const awsConfig = {
     Cognito: {
 
       userPoolId:
-      "ap-south-1_3RAaFSqJH",
+        import.meta.env.VITE_USER_POOL_ID,
 
       userPoolClientId:
-      "7u0qhqbne8kbt1mnlme0khutpv",
+        import.meta.env.VITE_USER_POOL_CLIENT_ID,
 
       loginWith: {
 

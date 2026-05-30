@@ -28,13 +28,13 @@ export default function TrendChart() {
 
   }, []);
 
-  // GET UNIQUE STOCKS
+  // to get unique stock symbols for filter dropdown
   const stocks = [
     "ALL",
     ...new Set(data.map(item => item.symbol))
   ];
 
-  // FILTER DATA
+  // to filter data based on selected stock
   const filteredData =
     selectedStock === "ALL"
       ? data
