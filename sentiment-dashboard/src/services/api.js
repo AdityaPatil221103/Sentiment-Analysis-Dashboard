@@ -4,7 +4,7 @@ import { fetchAuthSession } from "aws-amplify/auth";
 
 
 const BASE_URL =
-  "https://kghocttqxg.execute-api.ap-south-1.amazonaws.com/prod";
+  import.meta.env.VITE_API_URL;
 
 
 async function authHeaders() {
@@ -67,3 +67,7 @@ export async function getAlerts() {
     await authHeaders()
   );
 }
+
+console.log(
+  import.meta.env.VITE_API_URL
+);
